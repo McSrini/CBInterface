@@ -30,9 +30,7 @@ public class Driver {
         cplex.run();
         
         System.out.println("\n\nLeaf collection completed at "+ LocalDateTime.now());  
-        
-        
-            
+           
         CBTree cbTree =findCBInstructionTree(cplex.collectedLeafs, ZERO);
         //cbTree.printMe();
 

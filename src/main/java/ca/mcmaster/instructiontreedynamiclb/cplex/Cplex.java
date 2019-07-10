@@ -30,7 +30,7 @@ public class Cplex {
         cplex.use (new BranchHandler()) ;
         Nodehandler nodehandler = new Nodehandler();
         cplex.use (nodehandler) ;
-        cplex.setParam(IloCplex.Param.Emphasis.MIP,  3);
+        cplex.setParam(IloCplex.Param.Emphasis.MIP,  0);
         
          cplex.setParam( IloCplex.Param.MIP.Strategy.File, 0 );
         cplex.setParam( IloCplex.Param.Threads, ONE);
